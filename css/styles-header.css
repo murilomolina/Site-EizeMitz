@@ -5,15 +5,63 @@
     height: 200px;
     filter: brightness(0) invert(1);
     filter: opacity(0.75); 
+    display: flex;
 }
 
 .texto-titulo {
     text-align: start;
-    font-size: 80px;
+    font-size: 80px; /* Ajusta a fonte com base na largura da viewport */
     font-weight: bolder;
     color: #FFFFFF;
 }
 
+/* Consulta de mídia para dispositivos pequenos */
+@media (max-width: 576px) {
+    .texto-titulo {
+        font-size: 8vw;
+        text-align: start;
+    }
+
+    .header_secundario {
+        height: 150px;
+    }
+}
+
+/* Consulta de mídia para dispositivos médios */
+@media (min-width: 577px) and (max-width: 768px) {
+    .texto-titulo {
+        font-size: 7vw;
+        text-align: start;
+    }
+
+    .header_secundario {
+        height: 180px;
+    }
+}
+
+/* Consulta de mídia para dispositivos grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+    .texto-titulo {
+        font-size: 6vw;
+    }
+
+    .header_secundario {
+        height: 200px;
+    }
+}
+
+/* Consulta de mídia para dispositivos extra grandes */
+@media (min-width: 993px) {
+    .texto-titulo {
+        font-size: 5vw;
+    }
+
+    .header_secundario {
+        height: 200px;
+    }
+}
+
+/* possivel bloco de header para a página inicial.
 .index{
     background-image: url("/imgs/");
     background-size: cover;
@@ -21,4 +69,4 @@
     height: 200px;
     filter: brightness(0) invert(1);
     filter: opacity(0.75);
-}
+} */
