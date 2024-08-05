@@ -58,19 +58,19 @@
     </nav>
 
     <div class="container my-5">
-        <div class="row mb-4">
-            <div class="col-md-6">
+        <div class="row mb-5">
+            <div class="col-md-6 order-md-1">
                 <h2>Eizemitz é o Suco </h2>
                 <p> Na EizeMitz, transformamos a essência das laranjas em sucos de qualidade excepcional, proporcionando
                     frescor e sabor inigualáveis a cada gole. Fundada com a paixão por oferecer o melhor da natureza em
                     um copo, nossa empresa se dedica à produção de sucos de laranja 100% puros, sem aditivos ou
                     conservantes.</p>
             </div>
-            <div class="col-md-6 order-md-1">
-                <img src="/imgs/laranja1.png" alt="Imagem 2" class="img-fluid" width="200px">
+            <div class="col-md-6 order-md-2 imagem-exibicao">
+                <img src="imgs/laranja1.png" alt="imagem comprida, garrafa" height="300px">
             </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-5">
             <div class="col-md-6 order-md-2">
                 <p>Localizada no coração das melhores plantações de laranja, a EizeMitz combina tradição e inovação para
                     garantir que cada garrafa de suco mantenha o sabor autêntico e os nutrientes essenciais da fruta
@@ -78,7 +78,16 @@
                     que são sinônimo de saúde e vitalidade.</p>
             </div>
             <div class="col-md-6 order-md-1">
-                <img src="/imgs/laranja1.png" alt="Imagem 2" class="img-fluid" width="200px">
+                <div id="carouselExampleAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/imgs/laranja3.jpg" class="d-block" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/imgs/laranja4.jpg" class="d-block" alt="Imagem 2">
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container mt-5">
@@ -161,6 +170,10 @@
 
     <script src="/js/responsividade.js"></script>
     <script src="/js/animacao.js"></script>
+
+    <!-- sinclusão do bootstrap, css e js para o carrossel de imagens -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

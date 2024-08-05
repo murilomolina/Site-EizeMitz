@@ -13,3 +13,18 @@
     visibility: visible;
     transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s ease-out;
 }
+
+/* responsavel pelas imagens de dentro do carrossel de images*/
+.carousel-item img {
+    width: 100%;
+    height: 200px; /* Garante que a imagem ocupe a altura do item do carrossel */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 15px;
+}
+.carousel-inner {
+    max-height: 400px; /* Ajuste a altura máxima do carrossel conforme necessário */
+    overflow: hidden; /* Garante que o conteúdo que excede a altura seja ocultado */
+}
+.carousel-item {
+    height: 100%; /* Garante que o item do carrossel ocupe toda a altura do carrossel */
+}

@@ -18,6 +18,14 @@ p {
     margin-bottom: 1rem;
 }
 
+.imagem-exibicao {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100%;            /* Certifique-se de que a altura da div é suficiente */
+    border-radius: 15px;
+}
+
 .titulos {
     color: rgb(168, 93, 0);
 }
