@@ -1,0 +1,15 @@
+/*text-container -> serve para a animação do texto a ser exibido gradualmene via toggle-btn */
+.text-container {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden; /* Oculta o conteúdo antes da animação */
+    transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.text-container.visible {
+    height: auto; /* Permite que o conteúdo defina a altura */
+    opacity: 1;
+    visibility: visible;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s ease-out;
+}
