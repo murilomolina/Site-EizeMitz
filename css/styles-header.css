@@ -1,0 +1,24 @@
+.header_secundario{
+    background-color: darkorange;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+    filter: brightness(0) invert(1);
+    filter: opacity(0.75); 
+}
+
+.texto-titulo {
+    text-align: start;
+    font-size: 80px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.index{
+    background-image: url("/imgs/");
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+    filter: brightness(0) invert(1);
+    filter: opacity(0.75);
+}

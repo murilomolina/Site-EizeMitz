@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Rubik+Bubbles&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-top: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.titulos {
+    color: rgb(168, 93, 0);
+}
+
+#borda{  
+    border: 5px solid darkorange;
+    border-radius: 15px;
+}
+
+.nav-img {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.navbar {
+    background: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.navbar-toggler {
+    border: none
+}
+
+footer {
+    background-color: #ffffffa1;
+    color: #000000;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+    .borda-footer {
+        border-right: 2px solid darkorange;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .borda-footer {
+        border-right: none;
+        border-bottom: 2px solid #000000;
+        margin-bottom: 20px;
+    }
+}
+
+
+.footer-logo{
+    text-decoration: none;
+    transition: transform 1.0s ease, filter 1.0s ease;
+}
+
+.footer-logo:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    filter: brightness(1.5); /* Aumenta o brilho em 50% */
+}
+
+.button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Adiciona uma sombra */
+}
+
