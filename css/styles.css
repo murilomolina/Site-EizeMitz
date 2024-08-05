@@ -70,12 +70,13 @@ footer {
 @media (max-width: 767px) {
     .borda-footer {
         border-right: none;
-        border-bottom: 2px solid #000000;
+        border-bottom: 2px solid darkorange;
         margin-bottom: 20px;
     }
 }
 
 
+/* botao que contem logo/imagem presente no rodapé*/
 .footer-logo{
     text-decoration: none;
     transition: transform 1.0s ease, filter 1.0s ease;
@@ -86,11 +87,30 @@ footer {
     filter: brightness(1.5); /* Aumenta o brilho em 50% */
 }
 
-.button {
+/* tipo de botão que contem um icon como os de rede sociais*/
+.icon {
     transition: transform 0.3s ease;
 }
-.button:hover {
+.icon:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Adiciona uma sombra */
 }
 
+/* tipo de botão que contem um texto*/
+.custom-button {
+    background-color: #4CAF50; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado do texto */
+    display: inline-block; /* Exibe o botão como um elemento inline */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Muda o cursor quando passa sobre o botão */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.custom-button:hover {
+background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão */
+}
