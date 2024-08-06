@@ -20,15 +20,22 @@ p {
 
 .imagem-exibicao {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    height: 100%;            /* Certifique-se de que a altura da div é suficiente */
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;           
     border-radius: 15px;
 }
 
 .titulos {
     color: rgb(168, 93, 0);
 }
+
+.description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333; 
+    text-align: center;
+  }
 
 #borda{  
     border: 5px solid darkorange;
@@ -127,7 +134,7 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 por 16 = 0.5625) */
     height: 0;
     overflow: hidden;
 }
