@@ -14,6 +14,58 @@
     transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s ease-out;
 }
 
+/* trecho responsavel pela animação de rolagem de texto horizontalmente */
+.scroll-in-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    /* font-size: 2em; */
+    animation: scroll-in 3s linear forwards, fade-in 3s linear forwards;
+}
+
+@keyframes scroll-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0.2; /* Começa opaco */
+    }
+    100% {
+      opacity: 1; /* Termina totalmente opaco */
+    }
+  }
+  
+/* trecho responsavel pela animação de rolagem de texto verticalmente */
+.scroll-up-text {
+    display: inline-block;
+    /* position: relative; */
+    animation: scroll-up 3s linear forwards, fade-in 3s linear forwards;
+    opacity: 0;
+  }
+  
+  @keyframes scroll-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0.2; /* Começa opaco */
+    }
+    100% {
+      opacity: 1; /* Termina totalmente opaco */
+    }
+  }
+  
 /* responsavel pelas imagens de dentro do carrossel de images*/
 .carousel-item img {
     width: 100%;

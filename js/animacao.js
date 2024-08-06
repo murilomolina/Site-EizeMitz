@@ -1,4 +1,4 @@
-// func para ativar a animção de texto via button
+// func para ativar a animção de texto via button (botões presentes atualmente na index.html)
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.toggle-btn');
     
