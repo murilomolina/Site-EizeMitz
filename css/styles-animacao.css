@@ -4,14 +4,14 @@
     opacity: 0;
     visibility: hidden;
     overflow: hidden; /* Oculta o conteúdo antes da animação */
-    transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0.5s ease-out;
+    transition: height 1s ease-out, opacity 1s ease-out, visibility 1s ease-out;
 }
 
 .text-container.visible {
     height: auto; /* Permite que o conteúdo defina a altura */
     opacity: 1;
     visibility: visible;
-    transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s ease-out;
+    transition: height 1s ease-out, opacity 1s ease-out, visibility 0s ease-out;
 }
 
 /* trecho responsavel pela animação de rolagem de texto horizontalmente */
