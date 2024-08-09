@@ -86,4 +86,5 @@
 }
 .carousel-item {
     height: 100%; /* Garante que o item do carrossel ocupe toda a altura do carrossel */
+    width: 100%;
 }
