@@ -211,3 +211,9 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 .central-image img {
     height: 20rem;
 }
+
+/* Trecho responsavel por padronizar tudo que tem borda (telas que forem incorporadas) */
+#borda{
+    height: 40rem;
+    width: 100%;
+}
