@@ -116,6 +116,7 @@ footer {
 /* tipo de botão que contem um icon como os de rede sociais*/
 .icon {
     transition: transform 0.3s ease;
+    height: 70px;
 }
 .icon:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
