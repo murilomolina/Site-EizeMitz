@@ -8,6 +8,10 @@ body {
 .container {
     padding-top: 2rem;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -21,13 +25,20 @@ p {
 .imagem-exibicao {
     display: flex;
     justify-content: center; 
-    align-items: center;     
-    height: 100%;           
+    align-items: center;    
+}
+.imagem-exibicao img{
+    height: 30rem;           
     border-radius: 15px;
 }
 
-.titulos {
-    color: rgb(168, 93, 0);
+.titulo {
+    color: rgb(11, 158, 11);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.subtitulo{
+    color: rgb(0, 175, 9);
 }
 
 .description {
@@ -116,7 +127,8 @@ footer {
     background-color: #4CAF50; /* Cor de fundo */
     border: none; /* Remove a borda */
     color: white; /* Cor do texto */
-    padding: 15px 32px; /* Espaçamento interno */
+    width: fit-content;
+    padding: 10px 30px; /* Espaçamento interno */
     text-align: center; /* Alinhamento do texto */
     text-decoration: none; /* Remove sublinhado do texto */
     display: inline-block; /* Exibe o botão como um elemento inline */
@@ -146,4 +158,55 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* trecho responsavel para o bloco onde se encontra a origem da empresa. */
+.elevated-block {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.elevated-block img {
+    max-width: 100%;
+    height: 10rem;
+    margin-bottom: 15px;
+}
+
+.elevated-block p {
+    margin: 0;
+}
+
+/* Trecho que faz o background de divisão de conteúdo do index.html */
+/* .background {
+    background-color: rgba(128, 128, 128, 0.062);
+    background-size: cover;
+    background-position: top center;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+} */
+
+/* Trecho responsavel pela seção dos componentes do suco */
+.side-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.column {
+    text-align: center;
+}
+
+.central-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.central-image img {
+    height: 20rem;
 }

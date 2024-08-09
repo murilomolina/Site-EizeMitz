@@ -3,6 +3,7 @@
     height: 0;
     opacity: 0;
     visibility: hidden;
+    text-align: center;
     overflow: hidden; /* Oculta o conteúdo antes da animação */
     transition: height 1s ease-out, opacity 1s ease-out, visibility 1s ease-out;
 }
@@ -16,8 +17,8 @@
 
 /* trecho responsavel pela animação de rolagem de texto horizontalmente */
 .scroll-in-text {
-    display: inline-block;
-    white-space: nowrap;
+    display: flex;
+    /* white-space: nowrap; */
     overflow: hidden;
     position: relative;
     /* font-size: 2em; */
@@ -34,7 +35,7 @@
 }
 @keyframes fade-in {
     0% {
-      opacity: 0.2; /* Começa opaco */
+      opacity: 0; /* Começa opaco */
     }
     100% {
       opacity: 1; /* Termina totalmente opaco */
@@ -44,7 +45,7 @@
 /* trecho responsavel pela animação de rolagem de texto verticalmente */
 .scroll-up-text {
     display: inline-block;
-    /* position: relative; */
+    position: relative;
     animation: scroll-up 3s linear forwards, fade-in 3s linear forwards;
     opacity: 0;
   }
@@ -59,7 +60,7 @@
   }
   @keyframes fade-in {
     0% {
-      opacity: 0.2; /* Começa opaco */
+      opacity: 0; /* Começa opaco */
     }
     100% {
       opacity: 1; /* Termina totalmente opaco */
@@ -69,12 +70,18 @@
 /* responsavel pelas imagens de dentro do carrossel de images*/
 .carousel-item img {
     width: 100%;
-    height: 200px; /* Garante que a imagem ocupe a altura do item do carrossel */
+    height: 300px; /* Garante que a imagem ocupe a altura do item do carrossel */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
     border-radius: 15px;
 }
+.carousel-item.principal img{
+  width: 100%;
+  height: 30rem;  /* Garante que a imagem ocupe a altura do item do carrossel */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+  border-radius: 15px;
+}
 .carousel-inner {
-    max-height: 400px; /* Ajuste a altura máxima do carrossel conforme necessário */
+    max-height: 30rem; /* Ajuste a altura máxima do carrossel conforme necessário */
     overflow: hidden; /* Garante que o conteúdo que excede a altura seja ocultado */
 }
 .carousel-item {

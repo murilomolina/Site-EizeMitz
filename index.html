@@ -57,65 +57,132 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <div class="row mb-5">
-            <div class="col-md-6 order-md-1">
-                <h1 class="scroll-in-text">Eizemitz é o Suco </h1>
-                <h4 class="scroll-up-text"> Na EizeMitz, transformamos a essência das laranjas em sucos de qualidade excepcional, proporcionando
-                    frescor e sabor inigualáveis a cada gole. Fundada com a paixão por oferecer o melhor da natureza em
-                    um copo, nossa empresa se dedica à produção de sucos de laranja 100% puros, sem aditivos ou
-                    conservantes.</h4>
+    <div class="container">
+        <div class="row mt- mb-5">
+            <div class="col-md-8 order-md-1">
+                <h1 class="scroll-in-text titulo">Eizemitz é o Suco 100% integral</h1>
+                <p class="scroll-up-text">Aqui você cita o diferencial do produto em poucas linhas, por exemplo, fala que é sem açucar...</p>
+                <div class="row"> 
+                    <button class="custom-button toggle-btn" onclick="scrollToSobre()">Conhecer mais</button>
+                </div>
             </div>
-            <div class="col-md-6 order-md-2 imagem-exibicao">
-                <img src="imgs/laranja1.png" alt="imagem comprida, garrafa" height="300px">
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-md-6 order-md-2">
-                <h5 class="scroll-up-text">Localizada no coração das melhores plantações de laranja, a EizeMitz combina tradição e inovação para
-                    garantir que cada garrafa de suco mantenha o sabor autêntico e os nutrientes essenciais da fruta
-                    fresca. Utilizamos processos de produção sustentáveis e tecnologias avançadas para entregar produtos
-                    que são sinônimo de saúde e vitalidade.</h5>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <div id="carouselExampleAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
+            <div class="col-md-4 order-md-2">
+                <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/imgs/laranja3.jpg" class="d-block" alt="Imagem 1">
+                        <div class="carousel-item principal active">
+                            <img src="/imgs/cenario_2.jpg" class="d-block" alt="Imagem 1">
                         </div>
-                        <div class="carousel-item">
-                            <img src="/imgs/laranja4.jpg" class="d-block" alt="Imagem 2">
-                        </div> 
+                        <div class="carousel-item principal">
+                            <img src="/imgs/cenario_4.jpg" class="d-block" alt="Imagem 1">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <button class="custom-button toggle-btn col-12">Botão exemplo</button>
-                    <p class="text-container hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
-                        social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
-                        garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
-                        meio ambiente e à sociedade.</p>
+        <div id="sobre" class="row">
+            <div class="col-md-8 order-md-2">
+                <h1 class="scroll-in-text titulo">EizeMitz</h1> <!-- estilo css para titulo principa-->
+                <div>
+                    <h2 class="scroll-in-text subtitulo">Quem somos?</h2> <!-- estilo css para subtitulo principal-->
                 </div>
-                <div class="col-md-4 mb-3">
-                    <button class="custom-button toggle-btn col-12">Botão exemplo</button>
-                    <p class="text-container hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
-                        social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
-                        garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
-                        meio ambiente e à sociedade.</p>
+                <p class="scroll-up-text"> Na EizeMitz, transformamos a essência das laranjas em sucos de qualidade excepcional, proporcionando
+                    frescor e sabor inigualáveis a cada gole. Fundada com a paixão por oferecer o melhor da natureza em
+                    um copo, nossa empresa se dedica à produção de sucos de laranja 100% puros, sem aditivos ou
+                    conservantes. Na EizeMitz, transformamos a essência das laranjas em sucos de qualidade excepcional, proporcionando
+                    frescor e sabor inigualáveis a cada gole. Fundada com a paixão por oferecer o melhor da natureza em
+                    um copo, nossa empresa se dedica à produção de sucos de laranja 100% puros, sem aditivos ou
+                    conservantes.</p>
+            </div>
+            <div class="col-md-4 order-md-1 imagem-exibicao">
+                <img src="imgs/cenario_1.jpg" alt="imagem comprida, garrafa" height="300px">
+            </div>
+        </div>
+
+        <!-- Sistema -->
+        <div class="container mt-5 mb-5">
+            <div class="text-center">
+                <div class="col-md-12 row justify-content-center">
+                    <h2 class="text-center titulo"> <!-- Lembrar de atribuiur um estilo css para Titulo -->
+                        Isso é Eizemitz
+                    </h2>
+                    <h4 class="text-center subtitulo"> <!-- Lembrar de atribuiur um estilo css para subtitulo -->
+                        Um sabor diferente, leve, fresco e integral. A EizeMitz traz consigo a história da fruta e apresentamos para você da melhor maneira
+                    </h4>
                 </div>
-                <div class=" col-md-4 mb-3">
-                    <button class="custom-button toggle-btn col-12">Botão exemplo</button>
-                    <p class="text-container hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
-                        social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
-                        garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
-                        meio ambiente e à sociedade.</p>
+                <div class="container">
+                    <!-- Colunas Laterais Esquerda -->
+                    <div class="side-columns">
+                        <div class="column text-center">
+                            <img src="imgs/icons/sistema_1.png" alt="" class="icon toggle-btn" height="70px"/>
+                            <p class="text-container hidden">Texto sobre a composição do suco...</p>
+                            <h6 class="text-center subtitulo">Composição do suco</h6>
+                        </div>
+                        <div class="column text-center">
+                            <img src="imgs/icons/sistema_1.png" alt="" class="icon toggle-btn" height="70px"/>
+                            <p class="text-container hidden">Texto sobre a composição do suco...</p>
+                            <h6 class="text-center subtitulo">Composição do suco</h6>
+                        </div>
+                    </div>
+            
+                    <!-- Imagem Central -->
+                    <div class="central-image">
+                        <img src="imgs/laranja1.png" alt="Imagem Central" />
+                    </div>
+            
+                    <!-- Colunas Laterais Direita -->
+                    <div class="side-columns">
+                        <div class="column text-center">
+                            <img src="imgs/icons/sistema_1.png" alt="" class="icon toggle-btn" height="70px"/>
+                            <p class="text-container hidden">Texto sobre a composição do suco...</p>
+                            <h6 class="text-center subtitulo">Composição do suco</h6>
+                        </div>
+                        <div class="column text-center">
+                            <img src="imgs/icons/sistema_1.png" alt="" class="icon toggle-btn" height="70px"/>
+                            <p class="text-container hidden">Texto sobre a composição do suco...</p>
+                            <h6 class="text-center subtitulo">Composição do suco</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--mais blocos-->
+        <!-- Origem / história da empresa -->
+        <div class="row d-flex mt-5 mb-5">
+            <div class="col-md-4 order-md-2">
+                <h2 class="scroll-in-text titulo">Origem</h2>
+                <h4 class=" scroll-in-text subtitulo">Sobre a nossa criação</h4>
+            </div>
+           <div class="col-md-8 order-md-1 elevated-block">
+                <img src="imgs/logo/EizeMitz.png" alt="logo">
+                <p>Localizada no coração das melhores plantações de laranja, a EizeMitz combina tradição e inovação para
+                    garantir que cada garrafa de suco mantenha o sabor autêntico e os nutrientes essenciais da fruta
+                    fresca. Utilizamos processos de produção sustentáveis e tecnologias avançadas para entregar produtos
+                    que são sinônimo de saúde e vitalidade.</p>
+           </div>
+        </div>
+        <!-- botões -->
+        <div class="row d-flex text-center mb-5 mt-5">
+            <div class="col-md-4 mb-3">
+                <button class="custom-button toggle-btn col-12">Botão exemplo</button>
+                <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
+                    social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
+                    garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
+                    meio ambiente e à sociedade.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="custom-button toggle-btn col-12">Botão exemplo</button>
+                <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
+                    social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
+                    garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
+                    meio ambiente e à sociedade.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="custom-button toggle-btn col-12">Botão exemplo</button>
+                <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz, valorizamos a sustentabilidade e a responsabilidade
+                    social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo é
+                    garantir que cada passo, desde a colheita até a entrega, seja realizado com o máximo respeito ao
+                    meio ambiente e à sociedade.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Footer referencia -->
