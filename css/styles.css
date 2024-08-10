@@ -6,12 +6,13 @@ body {
 }
 
 .container {
-    padding-top: 1rem;
+    padding-top: 2rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 h2 {
@@ -25,19 +26,27 @@ p {
 .imagem-exibicao {
     display: flex;
     justify-content: center; 
-    align-items: center;    
+    align-items: start;    
 }
-.imagem-exibicao img{
-    height: auto; 
+.imagem-exibicao img{ 
     width: 100%;          
     border-radius: 15px;
 }
 
+/* definição de fonte afim de ser igual ao da Logo */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham/Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
 .titulo {
     color: rgb(11, 158, 11);
     font-size: 4rem;
+    font-family: 'Gotham';
     font-weight: bold;
 }
+
 .subtitulo{
     color: rgb(0, 175, 9);
 }
@@ -161,6 +170,11 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     height: 100%;
     border: 0;
 }
+/* Trecho responsavel por padronizar tudo que tem borda (telas que forem incorporadas) */
+#borda{
+    height: 40rem;
+    width: 100%;
+}
 
 /* trecho responsavel para o bloco onde se encontra a origem da empresa. */
 .elevated-block {
@@ -192,12 +206,12 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     margin: 0;
 } */
 
-/* Trecho responsavel pela seção dos componentes do suco */
 .side-columns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .column {
@@ -208,13 +222,9 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.central-image img {
-    height: 20rem;
+    /* margin-bottom: 20px; */
 }
 
-/* Trecho responsavel por padronizar tudo que tem borda (telas que forem incorporadas) */
-#borda{
-    height: 40rem;
-    width: 100%;
+.central-image img {
+    height: 20rem;
 }
