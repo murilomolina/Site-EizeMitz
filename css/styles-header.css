@@ -2,6 +2,8 @@
     background-color: darkorange;
     background-size: cover;
     background-position: top center;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total do header */
     height: 200px;
     filter: brightness(0) invert(1);
     filter: opacity(0.75); 
