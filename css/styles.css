@@ -52,6 +52,8 @@ p {
 }
 
 .description {
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     font-size: 1em;
     color: #333; 
@@ -127,6 +129,9 @@ footer {
 .icon {
     transition: transform 0.3s ease;
     height: 70px;
+}
+.icon#contato{
+    height: 100px;
 }
 .icon:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
