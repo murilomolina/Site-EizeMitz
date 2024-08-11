@@ -177,20 +177,29 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 }
 
 /* trecho responsavel para o bloco onde se encontra a origem da empresa. */
-.elevated-block {
-    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.5);
+.styled-block {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borda sutil para destaque */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fundo branco para destaque */
+    transition: box-shadow 0.3s ease; /* Transição suave para sombra */
 }
 
-.elevated-block img {
+.styled-block:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Efeito de sombra ao passar o mouse */
+}
+
+.styled-block img {
     max-width: 100%;
     height: 10rem;
     margin-bottom: 15px;
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+    box-sizing: border-box;
 }
 
-.elevated-block p {
+.styled-block p {
     margin: 0;
 }
 
@@ -227,4 +236,39 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 
 .central-image img {
     height: 20rem;
+}
+
+/* Trecho que desenvolve o bloco de opiniões */
+.opinions-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.opinions-container h2 {
+    margin-bottom: 20px;
+}
+
+.opinions-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.opinions-container input,
+.opinions-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.opinions-container button:hover {
+    background-color: #45a049;
 }
