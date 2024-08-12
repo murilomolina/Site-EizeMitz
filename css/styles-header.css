@@ -1,24 +1,37 @@
 .header_secundario{
-    background-color: darkorange;
+    background-color: rgba(255, 140, 0, 0.75); /* Cor de fundo com opacidade */
     background-size: cover;
     background-position: top center;
     padding: 20px;
     box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total do header */
     height: 200px;
-    filter: brightness(0) invert(1);
-    filter: opacity(0.75); 
+    /* filter: brightness(0) invert(1);
+    filter: opacity(0.75);  */
     display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+.img-header {
+    max-height: 200px; /* Ajuste a altura da imagem conforme necessário */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
 }
 
+/* definição de fonte afim de ser igual ao da Logo */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham/Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
 .texto-titulo {
     text-align: start;
-    font-size: 80px; /* Ajusta a fonte com base na largura da viewport */
+    font-size: 8vw; /* Ajusta a fonte com base na largura da viewport */
+    font-family: 'Gotham';
     font-weight: bolder;
     color: #FFFFFF;
 }
 
 /* Consulta de mídia para dispositivos pequenos */
-@media (max-width: 576px) {
+@media (max-width: 610px) {
     .texto-titulo {
         font-size: 8vw;
         text-align: start;
@@ -26,6 +39,9 @@
 
     .header_secundario {
         height: 150px;
+    }
+    .img-header {
+        display: none;
     }
 }
 
@@ -35,9 +51,11 @@
         font-size: 7vw;
         text-align: start;
     }
-
     .header_secundario {
-        height: 180px;
+        height: 150px;
+    }
+    .img-header {
+        max-height: 150px /* Ajuste a altura da imagem conforme necessário */
     }
 }
 
