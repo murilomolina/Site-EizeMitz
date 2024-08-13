@@ -10,6 +10,15 @@
     display: flex;
     align-items: center; /* Centraliza verticalmente o conteúdo */
 }
+/* possivel bloco de headers_secundários. */
+.header-bg{
+    background-image: url('/imgs/artes/laranja_respingos(1).png');
+    background-size: cover;
+    background-position: center;
+    /* height: 200px; */
+    filter: brightness(0) invert(1);
+    filter: opacity(0.9);
+}
 .img-header {
     max-height: 200px; /* Ajuste a altura da imagem conforme necessário */
     max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
@@ -80,13 +89,3 @@
         height: 200px;
     }
 }
-
-/* possivel bloco de header para a página inicial.
-.index{
-    background-image: url("/imgs/");
-    background-size: cover;
-    background-position: top center;
-    height: 200px;
-    filter: brightness(0) invert(1);
-    filter: opacity(0.75);
-} */
