@@ -1,5 +1,6 @@
 .header_secundario{
-    background-color: rgba(255, 140, 0, 0.75); /* Cor de fundo com opacidade */
+    /* background-color: rgba(255, 140, 0, 0.75);  */
+    background-color: darkorange;
     background-size: cover;
     background-position: top center;
     padding: 20px;
@@ -12,12 +13,12 @@
 }
 /* possivel bloco de headers_secundários. */
 .header-bg{
-    background-image: url('/imgs/artes/laranja_respingos(1).png');
+    background-image: url('/imgs/artes/tentativa_2.png');
     background-size: cover;
     background-position: center;
     /* height: 200px; */
-    filter: brightness(0) invert(1);
-    filter: opacity(0.9);
+    /* filter: brightness(0) invert(1);
+    filter: opacity(0.9); */
 }
 .img-header {
     max-height: 200px; /* Ajuste a altura da imagem conforme necessário */
