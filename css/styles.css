@@ -207,18 +207,34 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 .styled-block p {
     margin: 0;
 }
+.carousel-item > .styled-block {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borda sutil para destaque */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fundo branco para destaque */
+    transition: box-shadow 0.3s ease; /* Transição suave para sombra */
+    margin: 10px;
+}
+.carousel-item >.styled-block img{
+    height: 100%;
+    width: 100px;
+}
 
 /* Trecho que faria o background de divisão de conteúdo do index.html */
-/* .background {
-    background-color: rgba(128, 128, 128, 0.062);
+/*.background {
+    background-image: url('/imgs/artes/banner_eize.png');
     background-size: cover;
     background-position: top center;
     height: 31rem;
     display: flex;
     align-items: center;
     width: 100%;
+    filter: brightness(0) invert(1);
+    filter: opacity(0.2); 
     margin: 0;
-} */
+}*/
 
 .side-columns {
     display: flex;
