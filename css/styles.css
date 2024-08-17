@@ -306,6 +306,10 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 .opinions-container {
     background-color: #fff;
     padding: 2rem;
+    /* formatação para exibir sombra completa da box */
+    margin-right: 10px;
+    margin-left: 10px;
+    /*  */
     border-radius: 5px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
