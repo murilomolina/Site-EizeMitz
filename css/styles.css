@@ -92,10 +92,22 @@ p {
 }
 
 footer {
-    background-color: #ffffffa1;
+    position: relative;
     color: #000000;
     padding: 20px;
-    margin-top: 100px;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Garante que o pseudoelemento ocupe toda a largura do footer */
+    bottom: 0; /* Garante que o pseudoelemento ocupe toda a altura do footer */
+    background-image: url('/imgs/artes/banner_eize.png');
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+    z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo do footer */
 }
 
 @media (min-width: 768px) {
@@ -207,6 +219,8 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 .styled-block p {
     margin: 0;
 }
+
+/* carrossel */
 .carousel-item > .styled-block {
     border: 1px solid rgba(0, 0, 0, 0.1); /* Borda sutil para destaque */
     padding: 20px;
@@ -222,19 +236,48 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     width: 100px;
 }
 
+/* Trecho que estiliza os botões do carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo semitransparente */
+    border-radius: 50%; /* Botões arredondados */
+    top: 50%; /* Centralizando verticalmente */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #fff; /* Cor das setas */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Centralizando horizontalmente */
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
 /* Trecho que faria o background de divisão de conteúdo do index.html */
-/*.background {
+/* .background {
     background-image: url('/imgs/artes/banner_eize.png');
     background-size: cover;
     background-position: top center;
-    height: 31rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     width: 100%;
     filter: brightness(0) invert(1);
-    filter: opacity(0.2); 
-    margin: 0;
-}*/
+    filter: opacity(0.75);
+} */
 
 .side-columns {
     display: flex;
@@ -262,7 +305,7 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
 /* Trecho que desenvolve o bloco de opiniões */
 .opinions-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -288,8 +331,4 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-}
-
-.opinions-container button:hover {
-    background-color: #45a049;
 }

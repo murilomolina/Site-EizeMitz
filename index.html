@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/styles-header.css">
     <link rel="stylesheet" type="text/css" href="/css/styles-animacao.css">
+     <!-- Bootstrap CSS import que faz as setas do carrossel de opinões-->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    
     <title>EizeMitz</title>
-
 </head>
 
 <body>
@@ -71,7 +73,7 @@
                 </div>
                 <div class="col-md-4 order-md-2">
                     <div class="imagem-exibicao">
-                        <img src="/imgs/artes/arte_inicial.png" class="d-block" alt="Imagem 1">
+                        <img src="/imgs/artes/arte_inicial.png" alt="Imagem 1">
                     </div>
                 </div>
             </div>
@@ -151,40 +153,37 @@
                     <h1 class="text-center titulo">O que dizem sobre nós</h1>
                 </div>
             </div>
-            <div class="col-md-6 order-md-1">
-                <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
-                    data-bs-touch="true">
+            <div class="col-md-6">
+                <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="styled-block">
+                            <div class="styled-block text-center">
                                 <img src="imgs/logo/EizeMitz.png" alt="logo" height="60px">
                                 <p>Aqui vem um stories/publicação de alguem dando o depoimento sobre o suco/empresa</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="styled-block">
+                            <div class="styled-block text-center">
                                 <img src="imgs/logo/EizeMitz.png" alt="logo" height="60px">
                                 <p>Aqui vem um stories/publicação de alguem dando o depoimento sobre o suco/empresa</p>
                             </div>
-                        </div> <!--Ajustar posição da imagem (Centralizar produto)-->
+                        </div>
                         <div class="carousel-item">
-                            <div class="styled-block">
+                            <div class="styled-block text-center">
                                 <img src="imgs/logo/EizeMitz.png" alt="logo" height="60px">
                                 <p>Aqui vem um stories/publicação de alguem dando o depoimento sobre o suco/empresa</p>
                             </div>
-                        </div> <!--Ajustar posição da imagem (Centralizar produto)-->
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="prev">
+                        <i class="bi bi-chevron-left carousel-control-prev-icon" aria-hidden="true"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="next">
+                        <i class="bi bi-chevron-right carousel-control-next-icon" aria-hidden="true"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplay"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplay"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
         <div class="container">
@@ -208,7 +207,7 @@
             <div class="row d-flex text-center">
                 <div class="col-md-4">
                     <button class="custom-button toggle-btn col-md-12">Nossos Fundadores</button>
-                    <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz,
+                    <p class="text-container text-center hidden mt-1">Nosso compromisso vai além do sabor. Na EizeMitz,
                         valorizamos a sustentabilidade e a responsabilidade
                         social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo
                         é
@@ -217,7 +216,7 @@
                 </div>
                 <div class="col-md-4">
                     <button class="custom-button toggle-btn col-md-12">Nossas Premissas</button>
-                    <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz,
+                    <p class="text-container text-center hidden mt-1">Nosso compromisso vai além do sabor. Na EizeMitz,
                         valorizamos a sustentabilidade e a responsabilidade
                         social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo
                         é
@@ -226,7 +225,7 @@
                 </div>
                 <div class="col-md-4">
                     <button class="custom-button toggle-btn col-md-12">Nossas Ações</button>
-                    <p class="text-container text-center hidden">Nosso compromisso vai além do sabor. Na EizeMitz,
+                    <p class="text-container text-center hidden mt-1">Nosso compromisso vai além do sabor. Na EizeMitz,
                         valorizamos a sustentabilidade e a responsabilidade
                         social, investindo em práticas agrícolas éticas e apoiando as comunidades locais. Nosso objetivo
                         é
@@ -240,7 +239,7 @@
     <footer>
         <div class="row justify-content-around ">
             <div class="col-12 col-md-2 text-center borda-footer">
-                <img class="mb-4" src="/imgs/logo/EizeMitz.png" alt="Logo" width="100" height="100">
+                <img class="mb-4" src="/imgs/logo/EizeMitz_sem_fundo.png" alt="Logo" width="200" height="200">
                 <h5>&copy; EizeMitz</h5>
             </div>
             <div class="col-12 col-md-5 text-center borda-footer">
@@ -289,10 +288,9 @@
     <script src="/js/responsividade.js"></script>
     <script src="/js/animacao.js"></script>
 
-    <!-- sinclusão do bootstrap, css e js para o carrossel de imagens -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-
+    <!-- Bootstrap JS para o carrossel -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
