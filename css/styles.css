@@ -103,10 +103,10 @@ footer::before {
     left: 0;
     right: 0; /* Garante que o pseudoelemento ocupe toda a largura do footer */
     bottom: 0; /* Garante que o pseudoelemento ocupe toda a altura do footer */
-    background-image: url('/imgs/artes/banner_eize.png');
+    background-image: url('/imgs/artes/laranja_respingos.png');
     background-size: cover;
-    background-position: top center;
-    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+    background-position: center;
+    opacity: 0.35; /* Ajuste a opacidade conforme necessário */
     z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo do footer */
 }
 
@@ -130,6 +130,7 @@ footer::before {
 .footer-logo{
     text-decoration: none;
     transition: transform 1.0s ease, filter 1.0s ease;
+    width: 65%;
 }
 
 .footer-logo:hover img {
