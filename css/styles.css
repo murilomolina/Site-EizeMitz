@@ -130,7 +130,7 @@ footer::before {
 .footer-logo{
     text-decoration: none;
     transition: transform 1.0s ease, filter 1.0s ease;
-    width: 65%;
+    width: 45%;
 }
 
 .footer-logo:hover img {
@@ -144,11 +144,11 @@ footer::before {
     height: 70px;
 }
 .icon#contato{
-    height: 100px;
+    height: 65px;
 }
 .icon:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Adiciona uma sombra */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 /* tipo de botão que contem um texto*/
@@ -213,7 +213,7 @@ background-color: #45a049; /* Cor de fundo quando o cursor está sobre o botão 
     max-width: 100%;
     height: 10rem;
     margin-bottom: 15px;
-    border-radius: 5px; /* Bordas arredondadas na imagem */
+    border-radius: 5px; 
     box-sizing: border-box;
 }
 
