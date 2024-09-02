@@ -14,12 +14,14 @@
 /* possivel bloco de headers_secundários. */
 .header-bg{
     background-image: url('/imgs/artes/tentativa_2.png');
+    /* background-image: url('/imgs/artes/bg-personalizado-removebg.png'); */
     background-size: cover;
     background-position: center;
     /* height: 200px; */
     /* filter: brightness(0) invert(1);
     filter: opacity(0.9); */
 }
+
 .img-header {
     max-height: 200px; /* Ajuste a altura da imagem conforme necessário */
     max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */

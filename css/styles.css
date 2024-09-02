@@ -106,7 +106,7 @@ footer::before {
     background-image: url('/imgs/artes/laranja_respingos.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.35; /* Ajuste a opacidade conforme necessário */
+    opacity: 0.15; /* Ajuste a opacidade conforme necessário */
     z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo do footer */
 }
 
